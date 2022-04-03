@@ -8,3 +8,8 @@ function printResult(num: number) {
 
 printResult(add(5, 12));
 console.log(printResult(add(5, 22)));
+
+// Combine function is a function with 2 parameters of type number
+let combineValues : (a: number, b: number) => number;   
+combineValues = add;
+console.log(combineValues(8, 8));
